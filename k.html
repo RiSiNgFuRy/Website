@@ -1,330 +1,404 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta name="viewport" content="width=device-width", initial-scale="1">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
 
 <title>Kesari</title>
-<link rel="stylesheet" type="text/css" href="css.css">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" type="text/css" href="slider.css">
+<link rel="stylesheet" type="text/css" href="css2.css">
+<script language="JavaScript">
+function visibility(id,option)
+{
+  document.getElementById(id).style.width = option;
+}
+</script>
+
 </head>
+
 <body bgcolor="#333333" link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF">
-<div class="contain2">
-<div class="overlay3" style="background-color: #666666" style="height:30px">
-<img src="flux.png" height="60" align="left" width="140" hspace="200px" vspace="20px">
-<form>
- <table align="right" width="500" height="15" border="0" cellspacing="4">
-  <tr>
-    <td width="102"><div align="center"><a href="time pass.html">Home</a></div></td>
-    <td width="93" ><div align="center"><a href="#.htm">Movies</a></div></td>
-    <td width="88" ><div align="center"><a href="#.htm">TV Shows</a></div></td>
-    <td width="58" ><div align="center"><a href="#.htm">Kids</div></a></td>
-    <td width="91" ><div align="center"><input type="text" name="search" placeholder="search"></div></td>
-    <td width="28" ><div align="center"><a href="#.htm"><img src="account.png" width="20" height="20"></a></div></td>
-  </tr>
-</table>
-</form>
+<div class="top-banner">
+   <div class="top-title">
+   <img src="flux.png" height="60" width="140" >
+  </div>
+  <div class="top-navigation">
+    <form align="right">
+    <ul type="none">
+      <li class="nav-list"><a href="index.html">Home</a></li>
+      <li class="nav-list"><a href="index.html">Movies</a></li>
+      <li class="nav-list"><a href="index.html">TV Shows</a></li>
+      <li class="nav-list"><a href="index.html">Kids</a></li>
+      <li><input type="search" name="search" placeholder="search"></li>
+      <li><img src="account.png"></li>
+    </form>
+</div>
+<img class="menu-icon" src="menu.png" onclick="visibility('slider','220px');">
+<div class="slider-menu" id="slider">
+  <form>
+  <ul type="none">
+    <div class="arrow" onclick="visibility('slider','0px');">></div>
+    <img src="account.png">
+    <li><input type="search" name="search" placeholder="search"></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Movies</a></li>
+    <li><a href="index.html">TV Shows</a></li>
+    <li><a href="index.html">Kids</a></li>
+  </form>
 </div>
 </div>
 
-<br><br><br>
 <hr color="#FFFFFF">
 <br>
-<center>
-<table border="0" width="1450">
-<tr height="280">
-<td width="25%" height="280"><img src="k2p.jpg" height="550" width="100%"></td>
-<td width="75%" height="280" background="k3.jpeg" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="1play.png" hspace="480" height="100" width="100" vspace="200"></a>
-<div class="container">
-<div class="bottom-l">
-<a href="#.html"><img src="2play.png" width="115" height="90" align="left"></a><strong><font size="7px" color="#FFFFFF">"Kesari"
-                                                          <a href="#.html"><img src="add.png" width="40" height="40" align="right" vspace="20" hspace="20"></a>
-                                                          </font><br></strong>
-                                                          <p><font size="3px" color="#FFFFFF">Havildar Ishar Singh, a soldier in the British Indian Army, leads 21 Sikh soldiers in a fight against 10,000 Pashtun invaders. However, what unfolds is the greatest last stand wars of all time.
-														  </font></p>
 
+<div class="selected">
+  <div class="poster">
+<img class="pos-img" src="k2p.jpg">
+</div>
+<div class="m-play-part">
+<div class="m-play-img">
+  <img class="m-img"src="k3.jpeg">
 
-                                                          
-</div>
-</div>
-</td>
-</tr>
-<tr><td></td>
-<td>
-<a href="#.html" class="transparent_btn"><img src="3play.png" height="20" width="20" align="texttop">Watch</a>&nbsp;&nbsp;
-<a href="#.html" class="transparent_btn"><img src="add.png" height="20" width="20" align="texttop">Add to Wishlist</a>&nbsp;&nbsp;
-<a href="#.html" class="transparent_btn">Details</a>
-</td>
-</table>
-<br>
-</center>
-<br>
+  <a href="#.html"><img class="play-btn-1" src="1play.png"></a>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b><font size="3px" color="#FFFFFF">| Fan's Favourites</font></b><br> 
-<center>
-<table border="0" cellpadding="4">
+  <div class="m-content">
+  <a href="#.html"><img class="play-btn-2" src="2play.png" align="left"></a>
+  <strong>"Kesari"</strong>
+  <img class="add-btn" src="add.png" align="right">
+   <br>
+  <p>Havildar Ishar Singh, a soldier in the British Indian Army, leads 21 Sikh soldiers in a fight against 10,000 Pashtun invaders. However, what unfolds is the greatest last stand wars of all time.</p>
+  </div>
 
-<td height="180" width="300">
-<div class="contain">
-<a href="time pass.html"><img src="mh3.png" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left">Money Heist</a>
-                                                                   <a href="time pass.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">Lives are on the line as the Proffesor's plan begins to unravel and the theives must fend off enemies from both inside and outside the Bank of Spain.<br><br></font>
-<font size="1px">3 seasons | 2017 | IMDb rating: 8.5/10 </font>
-																   </div>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain">
-<a href="index.html"><img src="sm1.jpg" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left">SpiderMan into the Spider Verse</a>
-<a href="sm.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">After gaining superpowers from a spider bite, Miles Morales protects the city as Spider-Man. Soon, he meets alternate versions of himself and gets embroiled in an epic battle to save the multiverse.<br><br></font>
-<font size="1px">1h56min | 2018 | IMDb rating: 8.4/10 </font></div>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain">
-<a href="incep.html"><img src="incep11.jpg" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left">Inception</a>
-<a href="incep.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform the impossible, an inception.<br><br></font>
-<font size="1px">2h 28min | 2010 | IMDb rating: 8.8/10 </font>
-</div>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain">
-<a href="gb.html"><img src="gb1.jpg" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left">Gully Boy</a>
-<a href="gb.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">Murad, an underdog, struggles to convey his views on social issues and life in Dharavi through rapping. His life changes drastically when he meets a local rapper, Shrikant alias MC Sher.<br><br></font>
-<font size="1px">2h 34min | 2019 | IMDb rating: 8.2/10 </font></div>
-</div>
-</div>
-</td>
-</table>
-</center>
-<br><br><br><br>
+    <div class="buttons">
+    <a href="#.html" class="transparent_btn">Watch</a>
+    <a href="#.html" class="transparent_btn">Add to Wishlist</a>
+    <a href="#.html" class="transparent_btn">Details</a>
+    </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b><font size="3px" color="#FFFFFF">| Bollywood Binge</font></b><br> 
-<center>
-<table border="0" cellpadding="4">
+</div>
+</div>
+</div>
 
-<td height="180" width="300">
-<div class="contain">
-<a href="bb.html"><img src="bb1.jpg" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left">Bang Bang</a>
-<a href="bb.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">Harleen leads a boring life with her grandmother and works as a bank receptionist. However, her life takes a sudden turn after she falls in love with Rajveer, a thief.<br><br></font>
-<font size="1px">2h 36min | 2014 | IMDb rating: 5.5/10 </font></div>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain">
-<a href="bmb.html"><img src="bmb1.webp" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left"><font size="" color="#FFFFFF">Bhaag Milkha Bhaag</a>
-<a href="bmb.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">Milkha Singh, an Indian athlete, overcomes many agonising obstacles in order to become a world champion, Olympian and one of India's most iconic athletes.<br><br></font>
-<font size="1px">3h 09min | 2013 | IMDb rating: 8.2/10 </font></div></div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain">
-<a href="bap.html"><img src="bap1.jpg" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left">BA Pass</a>
-<a href="bap.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">A student is forced to compromise his morals in order to try to save his and his sister's futures. When his parents die, Mukesh moves to Delhi to pursue his ambition of studying to B.A. level.<br><br></font>
-<font size="1px">1h 35min | 2012 | IMDb rating: 6.4/10 </font></div>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain">
-<a href="k.html"><img src="k1.jpg" width="300" height="180">
-<div class="overlay">
-<div class="text"><img src="2play.png" width="30" height="20" align="left">Kesari</a>
-<a href="k.html"><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></a>
-<br><br><font size="1px">Havildar Ishar Singh, a soldier in the British Indian Army, leads 21 Sikh soldiers in a fight against 10,000 Pashtun invaders. However, what unfolds is the greatest last stand wars of all time.<br><br></font>
-<font size="1px">2h 40min | 2019 | IMDb rating: 7.4/10 </font></div>
-</div>
-</div>
-</td>
-</table>
-</center>
 <br><br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b><font size="3px" color="#FFFFFF">| Watch in your Language</font></b><br> 
-<center>
-<table border="0" cellpadding="4" cellspacing="15" style="color:#000000">
-<tr>
-<td height="80" width="140" background="c5.png" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="eng.png" width="120" height="75" vspace="25%" hspace="7%">
-<strong><font color="#000000">English</font></strong></a>
-</td>
-<td height="80" width="140" background="c7.png" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="hi.png".png" width="120" height="75" vspace="25%" hspace="7%">
-<strong><font color="#000000">Hindi</font></strong></a>
-</td>
-<td height="80" width="140" background="c6.png" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="ma.png" width="120" height="75" vspace="25%" hspace="7%">
-<strong><font color="#000000">Marathi</font></strong></a>
-</td>
-<td height="80" width="140" background="c5.png" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="mal.png" width="120" height="78" vspace="25%" hspace="7%">
-<strong><font color="#000000">Malyalam</font></strong></a>
-</td>
-<td height="80" width="140" background="c6.png" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="tel.png" width="120" height="75" vspace="25%" hspace="7%">
-<strong><font color="#000000">Telugu</font></strong></a>
-</td>
-<td height="80" width="140" background="c7.png" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="tam.png" width="120" height="75" vspace="25%" hspace="7%">
-<strong><font color="#000000">Tamil</font</strong></a>
-</td>
-<td height="80" width="140" background="c5.png" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<a href="#.html"><img src="ben.png" width="120" height="75" vspace="25%" hspace="7%">
-<strong><font color="#000000">Bengali</font></strong></a>
-</td>
-</table>
-</center>
+
+<div class="sub-tit">| Fan's Favourites</div>
+<div class="sub-pos-list">
+<div class="contain">
+<a href="time pass.html"><img class="sub-pos" src="mh3.png">
+<div class="overlay">
+<div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">Money Heist</div>
+<img class="add-btn2" src="add.png"></div>
 <br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b><font size="3px" color="#FFFFFF">| Top Rated</font></b><br> 
-<div class="box">
-<table border="0">
-<tr height="336">
-<td height="336" width="567" background="jl.jpg" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<div class="container2" style="top:147px">
-<div class="bottom-l2">
-<img src="2play.png" width="58" height="48" align="left"><strong><font size="3px" color="#FFFFFF">"Justice League"</font><a href="time pass.html">
-<img src="add.png" width="20" height="20"align="right" vspace="4" hspace="4"></a><br><br></strong>
-<font size="1px" color="#FFFFFF">2h | 2017 | IMDb rating: 6.4/10 </font>
+<div class="text">Lives are on the line as the Proffesor's plan begins to unravel and the theives must fend off enemies from both inside and outside the Bank of Spain.<br><br>
+3 seasons | 2017 | IMDb rating: 8.5/10
 </div>
 </div>
-</td>
-</tr>
-</table>
-</div>
-<div class="box1">
-<table border="0">
-<tr height="336">
-<td height="336" width="567" background="sr.jpg" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<div class="container2" style="top:147px">
-<div class="bottom-l2">
-<img src="2play.png" width="58" height="48" align="left"><strong><font size="3px" color="#FFFFFF">"Shawshank Redemption"</font><a href="time pass.html">
-<img src="add.png" width="20" height="20"align="right" vspace="4" hspace="4"></a><br><br></strong>
-<font size="1px" color="#FFFFFF">2h 22min | 1994 | IMDb rating: 9.3/10 </font>
-</div>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<br><br><br>
-<table border="0" align="center">
-<tr height="350">
-<td height="350" width="764" background="aven.jpg" style="background-position:center" style="background-attachment:fixed" style="background-repeat:no-repeat">
-<div class="container2">
-<div class="bottom-l2">
-<img src="2play.png" width="100" height="70" align="left"><strong><font size="6px" color="#FFFFFF">"Avengers Endgame: Marvels Studios"</font><a href="time pass.html">
-<img src="add.png" width="40" height="40"align="right" vspace="4" hspace="4"></a><br><br></strong>
-<font size="2px" color="#FFFFFF">3h 02min | 2019 | IMDb rating: 8.4/10 </font>
-</div>
-</div>
-</td>
-</tr>
-</table>
-<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b><font size="3px" color="#FFFFFF">| Choose by Genere</font></b><br> 
-<center>
-<table border="0" cellpadding="4">
-
-<td height="180" width="300">
-<div class="contain2">
-<a href="time pass.html">
-<img src="mu.jpg" width="300" height="180"></a>
-
-<div class="overlay2">
-<div class="text"><a href="time pass.html><font size="" color="#FFFFFF">Romance</font><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></div></a>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain2">
-<a href="time pass.html">
-<img src="hp.jpg" width="300" height="180"></a>
-<div class="overlay2">
-<div class="text"><a href="time pass.html>"<font size="" color="#FFFFFF">Comedy</font><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></div></a>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain2">
-<a href="time pass.html">
-<img src="jo1.jpg" width="300" height="180"></a>
-<div class="overlay2">
-<div class="text"><a href="time pass.html>"<font size="" color="#FFFFFF">Drama</font><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></div></a>
-</div>
-</div>
-</td>
-<td height="180" width="300">
-<div class="contain2">
-<a href="time pass.html">
-<img src="kgf.jpg" width="300" height="180"></a>
-<div class="overlay2">
-<div class="text"><a href="time pass.html>"<font size="" color="#FFFFFF">Action</font><img src="add.png" width="15" height="15" align="right" vspace="2" hspace="2"></div></a>
-</div>
-</div>
-</td>
-</table>
-</center>
-<br><br>
-<a href="#.htm">
-<table border="0" bgcolor="#000000" align="center" style="border-radius:10px">
-<tr>
-<td width="1000" align="center"><font color="#CCCCCC">Show more</font></td>
-</tr>
-</table>
 </a>
-<br><br>
+</div>
+
+<div class="contain">
+  <a href="sm.html"><img class="sub-pos" src="sm1.jpg" >
+  <div class="overlay">
+  <div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">SpiderMan into the Spider Verse</div>
+  <img class="add-btn2" src="add.png"></div>
+  <br>
+  <div class="text">After gaining superpowers from a spider bite, Miles Morales protects the city as Spider-Man. Soon, he meets alternate versions of himself and gets embroiled in an epic battle to save the multiverse.<br><br>
+  1h56min | 2018 | IMDb rating: 8.4/10
+  </div>
+  </div>
+</a>
+</div>
+
+<div class="contain">
+<a href="incep.html"><img class="sub-pos" src="incep11.jpg">
+  <div class="overlay">
+  <div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">Inception</div>
+  <img class="add-btn2" src="add.png"></div>
+  <br>
+  <div class="text">Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform the impossible, an inception.<br><br>
+  2h 28min | 2010 | IMDb rating: 8.8/10
+  </div>
+  </div>
+</a>
+  </div>
+
+<div class="contain">
+  <a href="gb.html"><img class="sub-pos" src="gb1.jpg">
+  <div class="overlay">
+  <div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">Gully Boy</div>
+  <img class="add-btn2" src="add.png"></div>
+  <br>
+  <div class="text">Murad, an underdog, struggles to convey his views on social issues and life in Dharavi through rapping. His life changes drastically when he meets a local rapper, Shrikant alias MC Sher.<br><br>
+  2h 34min | 2019 | IMDb rating: 8.2/10
+  </div>
+  </div>
+</a>
+</div>
+</div>
+
+<br>
+<div class="sub-tit">| Bollywood Binge</div>
+<div class="sub-pos-list">
+<div class="contain">
+<a href="bb.html"><img class="sub-pos" src="bb1.jpg">
+<div class="overlay">
+  <div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">Bang Bang</div>
+  <img class="add-btn2" src="add.png"></div>
+  <br>
+  <div class="text">Harleen leads a boring life with her grandmother and works as a bank receptionist. However, her life takes a sudden turn after she falls in love with Rajveer, a thief.<br><br>
+2h 36min | 2014 | IMDb rating: 5.5/10
+</div>
+</div>
+</a>
+</div>
+
+<div class="contain">
+<a href="bmb.html"><img class="sub-pos" src="bmb1.webp">
+  <div class="overlay">
+  <div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">Bhaag Milkha Bhaag</div>
+  <img class="add-btn2" src="add.png"></div>
+  <br>
+  <div class="text">Milkha Singh, an Indian athlete, overcomes many agonising obstacles in order to become a world champion, Olympian and one of India's most iconic athletes.<br><br>
+3h 09min | 2013 | IMDb rating: 8.2/10
+</div>
+</div>
+</a>
+</div>
+
+<div class="contain">
+<a href="bap.html"><img class="sub-pos" src="r1.jpg">
+  <div class="overlay">
+  <div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">Rustom</div>
+  <img class="add-btn2" src="add.png"></div>
+  <br>
+  <div class="text">A naval officer returns home to find out about his wife's affair. Soon, he surrenders after murdering the lover but as the case unfolds, it starts to reveal his hidden intention.<br><br>
+2h 28min | 2016 | IMDb rating: 7.1/10
+</div>
+</div>
+</a>
+</div>
+
+
+<div class="contain">
+<a href="k.html"><img class="sub-pos" src="k1.jpg">
+  <div class="overlay">
+  <div class="head"><img class="play-btn4" src="2play.png"><div class="txt-head">Kesari</div>
+  <img class="add-btn2" src="add.png"></div>
+  <br>
+  <div class="text">Havildar Ishar Singh, a soldier in the British Indian Army, leads 21 Sikh soldiers in a fight against 10,000 Pashtun invaders. However, what unfolds is the greatest last stand wars of all time.<br><br>
+2h 40min | 2019 | IMDb rating: 7.4/10
+</div>
+</div>
+</a>
+</div>
+</div>
+
+<br><br><br>
+<div class="sub-tit">| Watch in your Language</div>
+
+<div class="lang-list">
+
+<div class="lang-card" style="background-image:url(c5.png);">
+<img class="lang-text" src="eng.png">
+<div class="lang-name">English</div>
+</div>
+
+<div class="lang-card" style="background-image:url(c7.png);">
+<img class="lang-text" src="hi.png">
+<div class="lang-name">Hindi</div>
+</div>
+
+<div class="lang-card" style="background-image:url(c6.png);">
+<img class="lang-text" src="ma.png">
+<div class="lang-name">Marathi</div>
+</div>
+
+<div class="lang-card" style="background-image:url(c5.png);">
+<img class="lang-text" src="mal.png">
+<div class="lang-name">Malyalam</div>
+</div>
+
+<div class="lang-card" style="background-image:url(c6.png);">
+<img class="lang-text" src="tel.png">
+<div class="lang-name">Telugu</div>
+</div>
+
+<div class="lang-card" style="background-image:url(c7.png);">
+<img class="lang-text" src="tam.png">                             <!--hspace added due to img prblm-->
+<div class="lang-name">Tamil</div>
+</div>
+
+<div class="lang-card" style="background-image:url(c5.png);">
+<img class="lang-text" src="ben.png">                             <!--hspace added due to img prblm-->
+<div class="lang-name">Bengali</div>
+</div>
+</div>
+
+
+<div class="sub-tit">| Top Rated</font></div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="jl.jpg">
+        <div class= slide_info>
+          <img src="2play.png">
+          <div class="slide-text">
+            <div class="slide-head">Justice League</div>
+            <div class="slide_content">
+              2h | 2017 | IMDb rating: 6.4/10
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="sr.jpg">
+        <div class= slide_info>
+          <img src="2play.png">
+          <div class="slide-text">
+            <div class="slide-head">Shawshank Redemption</div>
+            <div class="slide_content">
+              2h 22min | 1994 | IMDb rating: 9.3/10
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="aven.jpg">
+        <div class= slide_info>
+          <img src="2play.png">
+          <div class="slide-text">
+              <div class="slide-head">Avengers Endgame: Marvels Studios</div>
+              <div class="slide_content">
+                3h 02min | 2019 | IMDb rating: 8.4/10
+              </div>
+         </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="tdk.jpg">
+        <div class= slide_info>
+          <img src="2play.png">
+          <div class="slide-text">
+              <div class="slide-head">The Dark Knight</div>
+              <div class="slide_content">
+                2h 32min | 2008 | IMDb rating: 9/10
+              </div>
+         </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="tgf.jpg">
+        <div class= slide_info>
+          <img src="2play.png">
+          <div class="slide-text">
+              <div class="slide-head">The Godfather</div>
+              <div class="slide_content">
+                2h 58min | 1972 | IMDb rating: 9.2/10
+              </div>
+         </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="aven1.jpg">
+        <div class= slide_info>
+          <img src="2play.png">
+          <div class="slide-text">
+              <div class="slide-head">Avengers: Inifinity War</div>
+              <div class="slide_content">
+                2h 29min | 2018 | IMDb rating: 8.4/10
+              </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: false,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay:2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+<br>
+
+<div class="sub-tit">| Choose by Genere</div>
+<div class="sub-pos-list">
+<div class="contain">
+<a href="#.html"><img class="sub-pos" src="mu.jpg">
+<div class="overlay2">
+  <div class="head"><div class="txt-head">Romance</div>
+  <img class="add-btn2" src="add.png"></div>
+</div>
+</div>
+</a>
+
+<div class="contain">
+<a href="#.html"><img class="sub-pos" src="hp.jpg">
+<div class="overlay2">
+  <div class="head"><div class="txt-head">Comedy</div>
+  <img class="add-btn2" src="add.png"></div>
+</div>
+</div>
+</a>
+
+<div class="contain">
+<a href="#.html"><img class="sub-pos" src="jo1.jpg">
+<div class="overlay2">
+  <div class="head"><div class="txt-head">Drama</div>
+  <img class="add-btn2" src="add.png"></div>
+</div>
+</div>
+</a>
+
+<div class="contain">
+<a href="#.html"><img class="sub-pos" src="kgf.jpg">
+<div class="overlay2">
+  <div class="head"><div class="txt-head">Action</div>
+  <img class="add-btn2" src="add.png"></div>
+</div>
+</div>
+</a>
+
+</div>
+<br>
 <center>
 <hr color="#FFFFFF">
-<div class="contain2">
-<div class="overlay3" style="height:160px">
-<a href="#.htm"><img src="twit.png" width="30" height="30"></a>&nbsp;
-<a href="#.htm"><img src="face.png" width="30" height="30"></a>&nbsp;
-<a href="#.htm"><img src="insta.png" width="30" height="30"></a>&nbsp;
-<a href="#.htm"><img src="imdb.png" width="30" height="30"></a>
-<br>
-<a href="#.html"><font size="2px" color="#666666">About</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#.html"><font size="2px" color="#666666">Career</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#.html"><font size="2px" color="#666666">FAQ</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#.html"><font size="2px" color="#666666">GetTheApp</font></a>
-<br>
-<a href="#.html"><font size="2px" color="#666666">Terms and Policies</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#.html"><font size="2px" color="#666666">Send Feedback</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="#.html"><font size="2px" color="#666666">Help</font></a>
-<br>
-<img src="flux.png" height="30" width="80" hspace="200px" vspace="20px"><br>
-<font size="1px" color="#666666">1999-2020 by Flux.com. inc.</font>
+<div class="social-icons">
+  <a href="#.htm"><img src="twit.png"></a>
+  <a href="#.htm"><img src="face.png"></a>
+  <a href="#.htm"><img src="insta.png"></a>
+  <a href="#.htm"><img src="imdb.png"></a>
 </div>
+
+<div class="website-info">
+<a href="#.html">About</a>
+<a href="#.html">Career</a>
+<a href="#.html">FAQ</a>
+<a href="#.html">GetTheApp</a>
+<a href="#.html">Terms and Policies</a>
+<a href="#.html">Send Feedback</a>
+<a href="#.html">Help</a>
 </div>
+<img  class="bottom-logo" src="flux.png">
 </center>
+
 </body>
 </html>
