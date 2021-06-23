@@ -203,6 +203,7 @@ hr{
 }
 .sub-tit{
   margin-left: 10%;
+  margin-top: 1%;
   color: #FFFFFF;
   font-weight: bold;
   padding-bottom: 10px;
@@ -237,12 +238,12 @@ hr{
   background-image: linear-gradient(to top,black 70%,transparent);
   overflow: hidden;
   width: 95%;
-  height:0;
+  height: 0%;
   z-index: -1;
   transition: .5s ease;
 }
 .contain:hover .overlay {
-  height: 100%;
+  height: 40%;
 }
 
 .head{
@@ -270,7 +271,7 @@ hr{
 }
 .txt-head{
   position: relative;
-  font-size: 15px;
+  font-size: 12px;
   margin-left: 2%;
   cursor: pointer;
   color: #FFF;
@@ -280,13 +281,23 @@ hr{
   font-weight: bold;
 }
 .text {
+  display: none;
   top:4%;
   color: white;
   font-size: 12px;
   left:2%;
   right: 2%;
   bottom: 2%;
+  height: 100%;
   position: relative;
+}
+.selec-info{
+  position: relative;
+  top: 0%;
+  margin: 2%;
+  width: 100%;
+  height: 1%;
+  font-size: 10px;
 }
 .lang-list{
   display:flex;
@@ -438,13 +449,14 @@ hr{
     height: auto;
   }
   .contain:hover .overlay {
-    height: 85%;
+    height: 40%;
   }
   .txt-head{
-    font-size: 12px;
-  }
-  .text {
     font-size: 9px;
+  }
+  .selec-info{
+    font-size: 8px;
+    margin-top:5%;
   }
   .swiper-slide {
     width: 300px;
