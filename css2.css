@@ -70,13 +70,14 @@ hr{
   width: 20px;
   height: 20px;
   text-align: center;
-  box-shadow: 20px;
+  vertical-align: middle;
   border-radius: 15px;
 }
 .slider-menu{
   position: absolute;
   z-index: 1;
   width: 0px;
+  height: 160%;
   background-color: black;
   right: 0%;
   transition: 0.5s ease;
@@ -104,9 +105,8 @@ hr{
   text-align: left;
   position: absolute;
   background: #fff;
-  margin-bottom:100%;
-  right: 5%;
-  top: 4%;
+  top: 1%;
+  right: 3%;
 }
 .selected{
   display:flex;
@@ -263,7 +263,7 @@ hr{
 }
 .add-btn2{
   position: relative;
-  width: 9%;
+  width: 6%;
   right: 2%;
   top:2%;
   float: right;
@@ -335,6 +335,26 @@ hr{
   background: yellow;
 }
 
+.swiper {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-1 {
+
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide-1 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .swiper-box{
   position: relative;
   width: 90%;
@@ -353,7 +373,7 @@ hr{
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .swiper-slide {
@@ -363,7 +383,11 @@ hr{
   width: 500px;
   height: 300px;
   background: #000;
-  -webkit-box-reflect: below 1px linear-gradient(to top,transparent 70%,transparent,#0006)
+}
+
+.swiper-wrapper{
+  width:100%;
+  height:100%;
 }
 
 .slide_info{
@@ -418,6 +442,9 @@ hr{
   margin-left: 5%;
   margin-right: 5%;
   text-decoration: none;
+}
+.website-info a:hover{
+  color: yellow;
 }
 .bottom-logo {
   display: block;

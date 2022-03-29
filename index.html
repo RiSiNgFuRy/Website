@@ -20,8 +20,8 @@ function visibility(id,option)
 <body bgcolor="#333333" link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF">
 <div class="top-banner">
    <div class="top-title">
-   <img src="flux.png" height="60" width="140">
-  </div>
+   <a href="index.html"><img src="flux.png" height="60" width="140"></a>
+   </div>
   <div class="top-navigation">
     <form align="right">
     <ul type="none">
@@ -50,24 +50,26 @@ function visibility(id,option)
 
 <hr color="#FFFFFF">
 <br>
-<div class="swiper-box">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="avt.jpg"></div>
-      <div class="swiper-slide"><img src="1920l.png"></div>
-      <div class="swiper-slide"><img src="war.jpg"></div>
-      <div class="swiper-slide"><img src="gvk.jpg"></div>
+<div class="swiper mySwiper">
+   <div class="swiper-wrapper">
+      <div class="swiper-slide-1"><img src="avt.jpg"></div>
+      <div class="swiper-slide-1"><img src="1920l.png"></div>
+      <div class="swiper-slide-1"><img src="war.jpg"></div>
+      <div class="swiper-slide-1"><img src="gvk.jpg"></div>
     </div>
 
     <div class="swiper-pagination"></div>
-  </div>
 </div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      loop:true,
-    });
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+     pagination: {
+       el: ".swiper-pagination",
+       dynamicBullets: true,
+     },
+   });
   </script>
 
 <div class="sub-tit">| Fan's Favourites</div>
@@ -308,7 +310,7 @@ function visibility(id,option)
         stretch: 0,
         depth: 200,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
       },
       loop: true,
       autoplay: {
